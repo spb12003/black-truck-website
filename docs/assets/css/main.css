@@ -277,6 +277,11 @@ input, select, textarea {
 
 	.align-left {
 		text-align: left;
+		display: grid;
+    	grid-template-columns: 1fr 1fr; /* Two even columns */
+   		gap: 10px; /* Space between items */
+    	list-style-type: disc;
+   		margin-left: 20px;
 	}
 
 	.align-center {
@@ -2044,8 +2049,7 @@ input, select, textarea {
 	}
 
 		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
+		.box > :last-child > :last-child {
 			margin-bottom: 0;
 		}
 
